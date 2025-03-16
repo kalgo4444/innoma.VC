@@ -1,0 +1,67 @@
+.result{
+    &__title{
+        margin-top: 100px;
+        font-size: 36px;
+        font-weight: 700;
+        color: $title-color;
+    }
+    &__wrapper{
+        margin-top: 30px;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+    }
+    &__card{
+        box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+        border-radius: $btnRadius;
+        text-align: center;
+        padding: 62px 51px 40px;
+        &-title{
+            margin-top: 20px;
+            font-weight: 600;
+            font-size: 18px;
+        }
+        &-text{
+            margin-top: 20px;
+            font-weight: 300;
+            font-size: 15px;
+            line-height: 1.5;
+        }
+    }
+}
+
+@media (max-width:768px) {
+    .result{
+        &__title{
+            font-size: 32px;
+            text-align: center;
+        }
+        &__wrapper{
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+        }
+        &__card{
+            &-title{
+                font-size: 18px;
+            }
+        }
+    }
+}
+
+
+@media (max-width:600px) {
+    .result{
+        &__wrapper{
+            display: grid;
+            grid-template-columns: 1fr;
+        }
+    }
+}
+
+@media (max-width:450px) {
+    .result{
+        &__title{
+            font-size: 24px;
+        }
+    }
+}
