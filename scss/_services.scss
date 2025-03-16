@@ -35,8 +35,8 @@
         width: 100%;
         font-weight: 300;
         font-size: 20px;
-        margin-bottom: 20px;
         line-height: 1.7;
+        margin-bottom: 20px;
     }
     &__card-btn{
         padding: 20px 50px;
@@ -69,7 +69,9 @@
         }
         &__card{
             display: flex;
-            flex-direction: column;
+            flex-direction: row;
+            text-align: center;
+            gap: 20px;
         }
         &__card-desc,
         &__card-img{
@@ -79,9 +81,17 @@
             display: flex;
             justify-content: center;
         }
+        &__card-title{
+            font-size: 18px;
+        }
+        &__card-text{
+            max-width: 562px;
+            width: 100%;
+            margin: 0 auto 20px;
+        }
     }
     .servisec__card:first-child{
-        margin-top: 0px;
+        margin-top: -60px;
         display: flex;
         flex-direction: column-reverse;
     }
@@ -91,5 +101,42 @@
         flex-direction: column-reverse;
     }
     
+}
+
+@media (max-width:450px) {
+    .servisec{
+        &__title{
+            font-size: 24px;
+        }
+        &__card-title{
+            font-size: 18px;
+            margin-bottom: 10px;
+        }
+        &__card-text{
+            width: 100%;
+            font-size: 1rem;
+            line-height: 2.3;
+        }
+        &__card-btn{
+            width: 100%;
+            font-size: 16px;
+        }
+    }
+}
+
+@media (max-width: 360px) {
+    .servisec{
+        &__card-title{
+            font-size: 16px;
+        }
+        &__card-text{
+            width: 100%;
+            font-size: 14px;
+            line-height: 2.3;
+        }
+        &__card-btn{
+            width: 100%;
+        }
+    }
 }
 
