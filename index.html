@@ -9,15 +9,64 @@
     <link rel="stylesheet" href="./css/main.min.css" />
   </head>
   <body>
+    <header class="header">
+      <div class="container">
+        <nav class="navbar">
+          <div class="navbarLogo">
+            <img src="./images/pageLogo.svg" alt="">
+          </div>
+          <ul class="navbar__Collaction showBars">
+            <li class="navbar__Items">
+              <a href="#" class="navbar__Links">
+                <span>Кто мы?</span>
+                <span>            <button onclick="toggleNavbar()" class="navbar__BtnBars">
+                  <img src="./images/barsClose.svg" alt="">
+                </button></span>
+              </a>
+            </li>
+            <li class="navbar__Items">
+              <a href="#" class="navbar__Links">
+                <span>Услуги</span>
+              </a>
+            </li>
+            <li class="navbar__Items">
+              <a href="#" class="navbar__Links">
+                <span>Акселератор</span>
+              </a>
+            </li>
+            <li class="navbar__Items">
+              <a href="#" class="navbar__Links">
+                <span>Новости</span>
+              </a>
+            </li>
+          </ul>
+          <div class="navbar__Buttons">  
+            <button class="navbar__Btn">Войти</button>
+            <button onclick="toggleNavbar()" class="navbar__BtnBars">
+              <img src="./images/bars.svg" alt="">
+            </button>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <section class="hero">
+        <div class="container">
+          <div class="hero__wrapper">
+            <h1 class="hero__title">Запустите <br>
+              <span>технологический бизнес </span>
+              на международных рынках</h1>
+              <p class="hero__text">
+                Открыт набор заявок на акселератор
+              </p>
+              <p class="hero__text2">Старт ближайшего акселератора <span>15.12.2022</span></p>
+              <button class="hero__Btn">Подать заявку</button>
+          </div>
+        </div>
+      </section>
+    </main>
 
 
-
-
-
-
-
-
-    
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
       AOS.init();

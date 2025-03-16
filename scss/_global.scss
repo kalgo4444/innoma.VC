@@ -1,0 +1,31 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Montserrat;
+}
+a{
+    text-decoration: none;
+    color: inherit;
+}
+li{
+    list-style: none;
+}
+input, button, section, textarea{
+    border: none;
+    outline: none;
+    background: #FFFFFF;
+    cursor: pointer;
+}
+img{
+    max-width: 100%;
+    max-height: 100%;
+}
+.container{
+    max-width: 1246px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
