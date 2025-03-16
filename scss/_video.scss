@@ -1,0 +1,149 @@
+.video{
+    &__wrapper{
+        margin-top: 50px;
+    }
+    &__title{
+        font-weight: 700;
+        font-size: 36px;
+        color: $title-color;
+    }
+    &__text{
+        margin-top: 15px;
+        font-weight: 300;
+        font-size: 20px;
+        width: 100%;
+        line-height: 1.5;
+    }
+    &__card-wrapper{
+        margin-top: 20px;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+    }
+    &__card{
+        box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+        border-radius: $btnRadius;
+        padding: 34px 50px 68px;
+        display: grid;
+        place-items: center;
+        p{
+            margin-top: 30px;
+            font-weight: 500;
+            font-size: 20px;
+        }
+    }
+    &__card-video{
+        margin-top: 20px;
+        // min-height: 675px;
+        background: #000;
+        display: grid;
+        place-items: center;
+        color: #FFFFFF;
+        border-radius: $btnRadius;
+        p{
+            margin-top: 189px;
+            font-weight: 600;
+            font-size: 20px;
+        }
+        img{
+            margin-top: 37px;
+            margin-bottom: 276px;
+        }
+    }
+
+}
+
+
+@media (max-width:768px) {
+    .video{
+        &__title{
+            font-size: 32px;
+            text-align: center;
+            margin-bottom: 5px;
+        }
+        &__text{
+            margin: 0 auto;
+            max-width: 631px;
+            width: 100%;
+            font-size: 1rem;
+            text-align: center;
+        }
+        &__card-wrapper{
+            margin-top: 20px;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+        }
+        &__card{
+            box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+            border-radius: $btnRadius;
+            padding: 70px 42px 83px;
+            display: grid;
+            place-items: center;
+            p{
+                font-size: 1rem;
+                text-align: center;
+            }
+        }
+        &__card-video{
+            p{
+                margin-top: 90px;
+                max-width: 221px;
+                width: 100%;
+                font-size: 18px;
+                text-align: center;
+            }
+            img{
+                margin-top: 20px;
+                margin-bottom: 90px;
+            }
+        }
+    }
+}
+
+@media (max-width:670px) {
+    .video{
+        &__card-wrapper{
+            display: grid;
+            grid-template-columns: auto;
+        }
+    }
+}
+
+@media (max-width:500px) {
+    .video{
+        &__title{
+            max-width: 250px;
+            width: 100%;
+            font-size: 24px;
+            margin: 0 auto 5px;
+        }
+        &__text{
+            max-width: 346px;
+            width: 100%;
+            font-size: 14px;
+            // margin: 0 auto;
+        }
+        &__card{
+            display: flex;
+            gap: 30px;
+            align-items: center;
+            padding: 40px 30px 47px;
+            P{
+                font-size: 14px;
+            }
+        }
+        &__card-video{
+            p{
+                margin-top: 31px;
+                font-size: 1rem;
+            }
+            img{
+                margin-top: 19px;
+                margin-bottom: 31px;
+            }
+
+        }
+    }
+    
+}
