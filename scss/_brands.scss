@@ -1,0 +1,113 @@
+.brands{
+    margin-top: 100px;
+    background: url("../images/brandsBack.png");
+    color: #FFFFFF;
+    &__wrapper{
+        display: flex;
+    }
+    &__desc,
+    &__img{
+        width: 50%;
+    }
+    &__desc{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: start;
+    }
+    &__img{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    &__title{
+        max-width: 556px;
+        width: 100%;
+        font-weight: 700;
+        font-size: 40px;
+    }
+    &__text{
+        margin-top: 17px;
+        max-width: 555px;
+        width: 100%;
+        font-size: 18px;
+        line-height: 2;
+    }
+    .brands__btn{
+        margin-top: 20px;
+        padding: 20px 50px;
+        background: $button-color;
+        color: #FFFFFF;
+        font-weight: 600;
+        font-size: 18px;
+        border-radius: $btnRadius;
+        transition: .2s;
+        &:hover{
+            opacity: .9;
+        }
+    }
+}
+
+
+@media (max-width:768px) {
+    .brands{
+        &__wrapper{
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+        }
+        &__desc,
+        &__img{
+            width: 100%;
+        }
+        &__desc{
+            margin-top: 117px;
+            text-align: center;
+        }
+        &__title{
+            font-size: 32px;
+            margin: 0 auto;
+        }
+        &__text{
+            font-size: 18px;
+            line-height: 2;
+            margin: 17px auto 0; 
+        }
+        .brands__btn{
+            margin: 35px auto 0;
+            padding: 20px 50px;
+            font-size: 18px;
+        }
+    }
+}
+
+
+@media (max-width:450px) {
+    .brands{
+        &__desc{
+            margin-top: 99px;
+            text-align: center;
+        }
+        &__title{
+            max-width: 324px;
+            width: 100%;
+            font-size: 24px;
+            margin: 0 auto;
+        }
+        &__text{
+            max-width: 331px;
+            width: 100%;
+            font-size: 14px;
+            line-height: 2;
+            margin: 17px auto 0; 
+        }
+        &__btn{
+            font-size: 14px;
+            padding: 15px 30px;
+        }
+    }
+    .brands__btn{
+        margin: 0px auto 0;
+        padding: 20px 50px;
+        font-size: 14px;
+    }
+}

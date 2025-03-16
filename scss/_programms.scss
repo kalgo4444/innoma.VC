@@ -1,4 +1,5 @@
 .programms{
+    display: flex;
     margin-top: 100px;
     &__title{
         font-weight: 700;
@@ -35,7 +36,10 @@
         &-content{
             display: none;
         }
-
+    }
+    &__btn{
+        padding: 20px 50px;
+        background: $button-color;
     }
     &__card{
         &:hover{
@@ -93,6 +97,7 @@
         &__card{
             display: flex;
             align-items: center;
+            padding: 10px 5px;
 
             span{
                 text-indent: 20px;
