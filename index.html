@@ -7,6 +7,8 @@
     <link rel="icon" href="./images/titleLogo.png" />
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <link rel="stylesheet" href="./css/main.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   </head>
   <body>
     <header class="header">
@@ -40,7 +42,7 @@
               </a>
             </li>
             <li class="navbar__Items">
-              <a href="#" class="navbar__Links" onclick="toggleNavbar()">
+              <a href="#news" class="navbar__Links" onclick="toggleNavbar()">
                 <span>Новости</span>
               </a>
             </li>
@@ -549,6 +551,35 @@
                 </div>
               </div>
              </section>
+             <!-- hello -->
+              <section class="hello" id="news">
+                <div class="container">
+                  <div class="hello__wrapper">
+                    <div class="hello__img">
+                      <img src="./images/helloimg.png" alt="">
+                    </div>
+                    <div class="hello__desc">
+                      <div class="hello__text">Всем привет! <br>Меня зовут Роман. Последние 6 лет я являюсь частью <br>
+                        инновационной экосистемы СНГ,  прошел путь от проектного <br>
+                        менеджера до руководителя продукта по автоматизированному <br>скаутингу и скорингу стартапов. За 6 лет работы я увидел  множество <br>ошибок и отсутствие ориентации акселерационных программ под  <br>запросы стартапов. Все акселераторы выполнялись ради <br>акселераторв и выполнения КПЭ. </div>
+                      <div class="hello__user">
+                        <p class="hello__name">Роман Гайн</p>
+                        <p class="hello__theme">Основатель INNOMA.VC</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </section>
+              <!-- moment  -->
+               <section class="moment">
+                <div class="owl-carousel owl-theme">
+                  <div class="item"><img src="./images/aoe1.png" alt=""></div>
+                  <div class="item"><img src="./images/aoe2.png" alt=""></div>
+                  <div class="item"><img src="./images/aoe3.png" alt=""></div>
+                  <div class="item"><img src="./images/aoe4.png" alt=""></div>
+                  <div class="item"><img src="./images/aoe5.png" alt=""></div>
+              </div>
+               </section>
 
 
     </main>
@@ -556,7 +587,30 @@
 
 
 
-
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script>
+      $('.owl-carousel').owlCarousel({
+        loop:true,
+        margin:7,
+        nav:false,
+        center:true,
+        autoplay:true,
+        autoplayTimeout:1000,
+        autoplayHoverPause:true,
+        responsive:{
+            0:{
+                items:2
+            },
+            768:{
+                items:3
+            },
+            1000:{
+                items:5
+            }
+        }
+    })
+    </script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
       AOS.init();
