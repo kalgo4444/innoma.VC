@@ -1,0 +1,45 @@
+.me{
+    margin-top: 100px;
+    &__me1{
+        display: grid;
+        place-items: center;
+    }
+    &__me2{
+        display: none;
+    }
+    &__me3{
+        display: none;
+    }
+}
+
+@media (max-width:768px) {
+    .me{
+        &__me1{
+            display: none;
+        }
+        &__me2{
+            display: block;
+            display: grid;
+            place-items: center;
+        }
+        &__me3{
+            display: none;
+        }
+    }
+}
+
+@media (max-width:500px) {
+    .me{
+        &__me1{
+            display: none;
+        }
+        &__me2{
+            display: none;
+        }
+        &__me3{
+            display: block;
+            display: grid;
+            place-items: center;
+        }
+    }
+}
